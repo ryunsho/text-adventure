@@ -5,14 +5,14 @@ var timer = false;
 var result;
 
 function setup() {
-    input = select("#input");
+    input = select("#input"); // https://p5js.org/reference/p5/select/
     result = select("#result");
     input.input(startTimer);
 }
 
 function startTimer() {
     if (timer === false) {
-        startTime = millis();
+        startTime = millis(); // https://p5js.org/reference/p5/millis/
         timer = true;
     }
     if (input.value() === sentence) {
